@@ -32,9 +32,10 @@ You are tasked with modifying Tiny YOLO ([found here](https://pjreddie.com/darkn
     
     1. fully visible
     
-    2. partially visible
-    ```
+    2. partially visible ```
+    
     --- 
+    
     ![depth image label overlay](https://s3-ap-southeast-2.amazonaws.com/public.data.black.ai/seq0_0023_1_label_overlay.png)
 
 
