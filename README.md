@@ -64,3 +64,8 @@ We are primarily looking to assess the accuracy of detection, speed of inference
 Would you be tempted to approach this classification task using any machine learning technique other than deep learning? If so, include a short (<200 word) explanation as to which and why. 
 
 ## Happy hacking! 
+
+The linked rgb-d dataset was taken from:
+[1] L. Spinello, K. O. Arras. People Detection in RGB-D Data. IEEE Int. Conf. on Intelligent Robots and Systems (IROS), 2011.
+[2] M. Luber and L. Spinello and K. O. Arras People Tracking in RGB-D Data With On-line Boosted Target Models. IEEE Int. Conf. on Intelligent Robots and Systems (IROS), 2011.
+
