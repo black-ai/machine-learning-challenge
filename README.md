@@ -23,20 +23,18 @@ You are tasked with modifying Tiny YOLO ([found here](https://pjreddie.com/darkn
         
     where: 
     
-    * image_id = depth image filename, ie. seq0_0001_2.pgm.
-    * x_topleft_coord, y_topleft_coord = top-left **x** and **y** bounding-box coordinates within this depth image.
-    * width, height = pixel size of the bounding-box within this depth image that is labelled as human.
-    * visibility = visibility of human within the bounding-box for this depth image
-    ```
-    0. hidden
+      * image_id : depth image filename, ie. seq0_0001_2.pgm.
+      * x_topleft_coord, y_topleft_coord : top-left **x** and **y** bounding-box coordinates within this depth image.
+      * width, height : pixel size of the bounding-box within this depth image that is labelled as human.
+      * visibility : visibility of human within the bounding-box for this depth image:
     
-    1. fully visible
-    
-    2. partially visible ```
-    
-    --- 
-    
-    ![depth image label overlay](https://s3-ap-southeast-2.amazonaws.com/public.data.black.ai/seq0_0023_1_label_overlay.png)
+```
+visibility key:
+0. hidden
+1. fully visible
+2. partially visible 
+```
+![depth image label overlay](https://s3-ap-southeast-2.amazonaws.com/public.data.black.ai/seq0_0023_1_label_overlay.png)
 
 
 4. Modify your Tiny YOLO implementation to run on single-channel depth images. 
