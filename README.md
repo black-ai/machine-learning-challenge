@@ -20,13 +20,15 @@ You are tasked with modifying Tiny YOLO ([found here](https://pjreddie.com/darkn
         image_id x_topleft_coord y_topleft_coord width height visability
         
     where: 
+    
     * image_id = depth image filename, ie. seq0_0001_2.pgm.
     * x_topleft_coord, y_topleft_coord = top-left **x** and **y** bounding-box coordinates within this depth image.
     * width, height = pixel size of the bounding-box within this depth image that is labelled as human.
     * visibility = visibility of human within the bounding-box for this depth image
-        0) hidden
-        1) fully visible
-        2) partially visible
+    
+        0. hidden
+        1. fully visible
+        2. partially visible
        
     ie. 
 
