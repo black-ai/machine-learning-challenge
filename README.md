@@ -6,7 +6,7 @@ You are tasked with modifying Tiny YOLO ([found here](https://pjreddie.com/darkn
 
 ## The task
 
-1. Implement Tiny YOLO using your framework and language of choice. 
+1. Implement Tiny YOLO using your framework, approach, and language of choice. 
 2. Download our training and test datasets [here](https://s3-ap-southeast-2.amazonaws.com/public.data.black.ai/ml_challenge_dataset.tar.gz) or from the cli:
 
     wget -t 15 https://s3-ap-southeast-2.amazonaws.com/public.data.black.ai/ml_challenge_dataset.tar.gz
