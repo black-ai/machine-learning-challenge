@@ -7,11 +7,12 @@ You are tasked with modifying Tiny YOLO ([found here](https://pjreddie.com/darkn
 ## The task
 
 1. Implement Tiny YOLO using your framework, approach, and language of choice. 
-2. Download our training and test datasets [here](https://s3-ap-southeast-2.amazonaws.com/public.data.black.ai/ml_challenge_dataset.tar.gz) or from the cli:
+2. Download our training dataset [here](https://s3-ap-southeast-2.amazonaws.com/public.data.black.ai/ml_challenge_dataset.tar.gz) or from the cli:
 
     wget -t 15 https://s3-ap-southeast-2.amazonaws.com/public.data.black.ai/ml_challenge_dataset.tar.gz
 
-3. Prepare the input data for training. 
+3. Prepare the input data for training.
+
     Depth images (and labelled coordinate bounds) are rotated 90 degrees clockwise from upright. The depth images themselves are saved as 16bit, single-channel PGM images [640x480]. They contain raw sensor data content from a Kinectv1 sensor. Namely, each pixel has value between [0,1084]. Please check [this page](http://wiki.ros.org/kinect_calibration/technical) in case you are interested in metric values.
 
     Image labels can be found in the labels.txt file, with bounding box labels structured as follows: 
@@ -27,9 +28,11 @@ You are tasked with modifying Tiny YOLO ([found here](https://pjreddie.com/darkn
         1) fully visible
         2) partially visible
        
-   ie. 
+    ie. 
 
     ![depth image label overlay](https://s3-ap-southeast-2.amazonaws.com/public.data.black.ai/seq0_0023_1_label_overlay.png)
+
+    Split the dataset out for training and testing as you feel is appropriate. 
 
 4. Modify your Tiny YOLO implementation to run on single-channel depth images. 
 5. Optimise your modified network around this data type as much as you can.
