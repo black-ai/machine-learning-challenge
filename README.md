@@ -2,7 +2,7 @@
 The purpose of this challenge is to test your ability to implement and adapt modern neural networks. 
 
 ## Introduction
-You are tasked with modifying Tiny YOLO [found here](https://pjreddie.com/darknet/yolo/), to efficiently classify single-channel depth data. YOLO is a shallow single-pass neural network architecture developed by P.J. Reddie that is built for speed; YOLO performs 1000x faster than R-CNN and 100x faster than Fast R-CNN on similarly sized input data. Tiny YOLO moreso. 
+You are tasked with modifying Tiny YOLO, [found here](https://pjreddie.com/darknet/yolo/), to efficiently classify single-channel depth data. YOLO is a shallow single-pass neural network architecture developed by P.J. Reddie that is built for speed; YOLO performs 1000x faster than R-CNN and 100x faster than Fast R-CNN on similarly sized input data. Tiny YOLO moreso. 
 
 ## The task
 
