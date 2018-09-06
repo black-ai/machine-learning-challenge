@@ -6,7 +6,7 @@ You are tasked with modifying Tiny YOLO ([found here](https://pjreddie.com/darkn
 
 ## The task
 
-1. Implement Tiny YOLO using your framework, approach, and language of choice. 
+1. Implement Tiny YOLO using your framework, approach, and language of choice.  You're also free to use any version you want v1,v2 or v3.
 2. Download our training dataset [here](https://s3-ap-southeast-2.amazonaws.com/public.data.black.ai/ml_challenge_dataset.tar.gz) or from the cli:
 
     wget -t 15 https://s3-ap-southeast-2.amazonaws.com/public.data.black.ai/ml_challenge_dataset.tar.gz
@@ -59,9 +59,15 @@ Final submission should be made to contact@black.ai, with the subject line "ML_C
 
 ## Evaluation
 We are primarily looking to assess the accuracy of detection, speed of inference, and the implementation itself. We will be testing/training both the implementation and model on a machine running 64-bit Ubuntu 16.04 LTS, with a Nvidia GTX 1080 graphics card.  
+What we are looking for:
+Your understanding of parameters and hyperparameters is a mandate with this task. You are expected to be able to explain your reasoning for any changes made to the architecture and hyperparameter choices.
+
+Tips:
+Read the yolo research paper to understand the different post processing steps they do with respect to your version found [here](https://pjreddie.com/publications/)
 
 ## Bonus
 Would you be tempted to approach this classification task using any machine learning technique other than deep learning? If so, include a short (<200 word) explanation as to which and why. 
+Please note that, while just changing the input size to accept depth instead of rgb would get you through the task, think about how to optimise the whole network for depth like chopping off layers, different convolution techniques and give us a comparison of different techniques.If you're assuming certain things, please list them out in your submission.
 
 ## Happy hacking! 
 
