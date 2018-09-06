@@ -67,7 +67,8 @@ Read the yolo research paper to understand the different post processing steps t
 
 ## Bonus
 Would you be tempted to approach this classification task using any machine learning technique other than deep learning? If so, include a short (<200 word) explanation as to which and why. 
-Please note that, while just changing the input size to accept depth instead of rgb would get you through the task, think about how to optimise the whole network for depth like chopping off layers, different convolution techniques and give us a comparison of different techniques.If you're assuming certain things, please list them out in your submission.
+
+Note that while simply changing the input size to accept depth data instead of rgb may satisfy the task, you may want to think about how to optimise the whole network for depth data: adding or removing network layers, using different convolution techniques, etc. Please give us a comparison of any different techniques you employ or would cosider testing if given more time. If you make assumptions please also list these out in your submission.
 
 ## Happy hacking! 
 
