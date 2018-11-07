@@ -6,7 +6,7 @@ You are tasked with modifying Tiny YOLO ([found here](https://pjreddie.com/darkn
 
 ## The task
 
-1. Implement Tiny YOLO using your framework, approach, and language of choice. 
+1. Implement Tiny YOLO using your framework, approach, and language of choice.  You're also free to use any version you want v1,v2 or v3.
 2. Download our training dataset [here](https://s3-ap-southeast-2.amazonaws.com/public.data.black.ai/ml_challenge_dataset.tar.gz) or from the cli:
 
     wget -t 15 https://s3-ap-southeast-2.amazonaws.com/public.data.black.ai/ml_challenge_dataset.tar.gz
@@ -38,6 +38,7 @@ You are tasked with modifying Tiny YOLO ([found here](https://pjreddie.com/darkn
 
 
 4. Modify your Tiny YOLO implementation to run on single-channel depth images. 
+5. Come up with a custom loss function which optimises for false positives, reducing false negatives.(Also explain your decision.)
 5. Optimise your modified network around this data type as much as you can.
 6. Train! 
 
@@ -59,9 +60,16 @@ Final submission should be made to contact@black.ai, with the subject line "ML_C
 
 ## Evaluation
 We are primarily looking to assess the accuracy of detection, speed of inference, and the implementation itself. We will be testing/training both the implementation and model on a machine running 64-bit Ubuntu 16.04 LTS, with a Nvidia GTX 1080 graphics card.  
+What we are looking for:
+Your understanding of parameters and hyperparameters is a mandate with this task. You are expected to be able to explain your reasoning for any changes made to the architecture and hyperparameter choices.
+
+Tips:
+Read the yolo research paper to understand the different post processing steps they do with respect to your version found [here](https://pjreddie.com/publications/)
 
 ## Bonus
 Would you be tempted to approach this classification task using any machine learning technique other than deep learning? If so, include a short (<200 word) explanation as to which and why. 
+
+Note that while simply changing the input size to accept depth data instead of rgb may satisfy the task, you may want to think about how to optimise the whole network for depth data: adding or removing network layers, modifying feature extractors, using different convolution techniques, etc. Please give us a comparison of any different techniques you employ or would cosider testing if given more time. If you make assumptions please also list these out in your submission.
 
 ## Happy hacking! 
 
