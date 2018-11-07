@@ -39,8 +39,8 @@ You are tasked with modifying Tiny YOLO ([found here](https://pjreddie.com/darkn
 
 4. Modify your Tiny YOLO implementation to run on single-channel depth images. 
 5. Come up with a custom loss function which optimises for false positives, reducing false negatives.(Also explain your decision.)
-5. Optimise your modified network around this data type as much as you can.
-6. Train! 
+6. Optimise your modified network around this data type as much as you can.
+7. Train! 
 
 ## Submission
 
